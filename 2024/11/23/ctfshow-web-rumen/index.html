@@ -10,7 +10,7 @@
   font-family: 'JetBrains Mono';
   src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
 }
-</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - $1 行","copy":"复制"}}</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
  document.documentElement.setAttribute('theme-mode', 'light')
 if (window.localStorage.getItem('theme-mode') === 'dark')
  document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
@@ -23,7 +23,7 @@ if (window.localStorage.getItem('theme-mode') === 'dark')
 }</style><style>:root {
  --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
  --light-background: url('/img/bk.jpg');
- --theme-encrypt-confirm: 'confirm'
+ --theme-encrypt-confirm: '确认'
 }</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
 window.mermaid = mermaid;
 code.paintMermaid();
@@ -63,15 +63,15 @@ lightGallery(document.getElementById('post-bg'), {
    }
  }
 });
-document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1></h1></div><hr><div id="post-content"><hr>
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1></h1></div><hr><div id="post-content"><hr>
 <h2 id="title：ctfshow-web-入门1-20-详解"><a href="#title：ctfshow-web-入门1-20-详解" class="headerlink" title="title：ctfshow web 入门1-20 详解"></a>title：ctfshow web 入门1-20 详解</h2><p>​                                    竟然还要花钱，只能从网上找具体解析了（希望能把知识点掌握了吧）</p>
-<p>第一题：使用F12快捷键对网站进行审计，可以在元素板块内的<body>中找到flag</p>
+<p>第一题：使用F12快捷键对网站进行审计，可以在元素板块内的<body>中找到flag</body></p>
 <p>​                ![](D:\hexo\source\images\ctfshow web入门1.png)</p>
 <p>知识点：（1）注意到flag左右添加了&lt;!–       &gt;,这在HTML中是一种用于注释语句的标签，可以让其中内容无法在浏览器中显示。</p>
 <p>​                （2）F12是绝大多数浏览器自带的快捷功能，用于审计</p>
 <p>第二题：想像上一题一样用F12解决问题（想也没用毕竟没钱买题），会发现无法打开，也无法使用右键选择”查看主页源代码“选项，</p>
 <p>​                那就必须换一种方式查看。</p>
-<p>​                <img src="D:\hexo\source\images\ctfshow web 入门2.png" style="zoom: 50%;" /></p>
+<p>​                <img src="/2024/11/23/ctfshow-web-rumen/hexo\source\images\ctfshow web 入门2.png" style="zoom: 50%;"></p>
 <p>​                 sir, this way.</p>
 <p>​                 或者通过在URL的前面加上view-source:，就可以显示出网页源代码了。</p>
 <p>知识点：(1)通过网页源代码我们可能会发现有禁用鼠标右键等功能的语句，要学会灵活使用其他方法。</p>
@@ -106,7 +106,7 @@ document.addEventListener("pjax:complete", reset);reset()})</script><meta name="
 <p>​               限制爬虫访问网站的频率</p>
 <p>​               一个自觉且善意的爬虫，应该在抓取网页之前，先阅读robots.txt，了解并执行网站管理者制定的爬虫规则。</p>
 <p>​               这是一个来自必应的robots.txt</p>
-<p>​                <img src="D:\hexo\source\images\ctfshow web 入门4.png" style="zoom:50%;" /></p>
+<p>​                <img src="/2024/11/23/ctfshow-web-rumen/hexo\source\images\ctfshow web 入门4.png" style="zoom:50%;"></p>
 <p>​                User-agent: 爬虫的名称(若名称为*则对象是所有爬虫)</p>
 <p>​                Disallow: 不允许爬虫访问的地址（名称为&#x2F;代表什么都不准访问）</p>
 <p>​                Allow: 允许爬虫访问的地址</p>
@@ -147,9 +147,9 @@ document.addEventListener("pjax:complete", reset);reset()})</script><meta name="
 <p>第十题：cookie 只是一块饼干，不能存放任何隐私数据</p>
 <p>​               包不是饼干的呀老弟</p>
 <p>​               直接用F12在网络中的数据包中找到Cookie发现答案</p>
-<p>​               <img src="D:\hexo\source\images\ctfshow web 入门10.png" style="zoom:50%;" />   </p>
+<p>​               <img src="/2024/11/23/ctfshow-web-rumen/hexo\source\images\ctfshow web 入门10.png" style="zoom:50%;">   </p>
 <p>​               有个小坑，%7B是什么东西？在URL中代表{，可以通过HackBar自带的URL解码功能转换</p>
-<p>​               <img src="D:\hexo\source\images\ctfshow web 入门10（2）.png" style="zoom:67%;" /> </p>
+<p>​               <img src="/2024/11/23/ctfshow-web-rumen/hexo\source\images\ctfshow web 入门10（2）.png" style="zoom:67%;"> </p>
 <p>知识点：(1)cookie其实就是一些数据信息，类型为“小型文本文件“，是某些网站为了辨别用户身份，进行Session跟踪而储存在用户本地</p>
 <p>​                    终端上的数据（通常经过加密），由用户客户端计算机暂时或永久保存的信息。浏览器保存了我们的cookie，里面记录了一些</p>
 <p>​                    信息，这些cookie是服务器创建后返回给浏览器的，浏览器只进行了保存。</p>
@@ -158,7 +158,7 @@ document.addEventListener("pjax:complete", reset);reset()})</script><meta name="
 <p>​                      码，即一个百分号%，后面跟对应字符的ASCII（16进制）码值。如果不使用转义字符，这些编码就会当URL中定义的特殊字                </p>
 <p>​                      符处理。</p>
 <p>第十一题：域名其实也可以隐藏信息，比如ctfshow.com 就隐藏了一条信息。可以通过Dns查询网站查询内容</p>
-<p>​                   <img src="D:\hexo\source\images\ctfshow web 入门11.png" style="zoom: 67%;" /></p>
+<p>​                   <img src="/2024/11/23/ctfshow-web-rumen/hexo\source\images\ctfshow web 入门11.png" style="zoom: 67%;"></p>
 <p>知识点：域名解析，简而言之，就是将域名转换为IP地址的过程。当我们访问一个网站时，实际上我们是在与一个IP地址通信，但由于IP</p>
 <p>​               地址通常是一串难以记忆的数字，例如“192.0.2.1”，所以我们使用更为直观的域名作为代替。</p>
 <p>​               域名解析类型</p>
@@ -238,4 +238,4 @@ document.addEventListener("pjax:complete", reset);reset()})</script><meta name="
 <p>​                         </p>
 <p>​               </p>
 <p>​            </p>
-<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/11/23/hello-world/">Hello World Prev →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">sympathy</a></h1><div id="description"><p>sympathy的个人博客</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title%EF%BC%9Actfshow-web-%E5%85%A5%E9%97%A81-20-%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">title：ctfshow web 入门1-20 详解</span></a></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/11/23/hello-world/">Hello World 上一篇 →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="文章目录">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">sympathy</a></h1><div id="description"><p>sympathy的个人博客</p></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title%EF%BC%9Actfshow-web-%E5%85%A5%E9%97%A81-20-%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">title：ctfshow web 入门1-20 详解</span></a></li></ol></div></div><footer><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> 主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
