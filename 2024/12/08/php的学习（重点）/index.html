@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="zh-CN" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>php的学习（重点） | sympathy</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/img/bk.jpg');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);document.addEventListener('pjax:success', _ => bszCaller.fetch(
+ "//busuanzi.ibruce.info/busuanzi?jsonpCallback=BusuanziCallback", a => {
+  bszTag.texts(a),
+  bszTag.shows()
+}));reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>php的学习（重点）</h1></div><hr><div id="post-content"><p>categories:  - web知识</p>
+<hr>
+<p><strong>（水痘导致重度感冒，第二周基本没学多少）</strong></p>
+<p><strong>注：本文中的￥即为$</strong></p>
+<p>1.echo和print的区别：echo能够输出一个及以上的字符串，英文逗号隔开<br>                              print只能输出一个字符串，并始终返回1：print “avcd”<br>                                                                                          echo print “avcd”输出avcd1</p>
+<p>2.双引号之间可以引用变量，单引号不行</p>
+<p>3.var_dump(变量）：如果变量是一个八进制或十六进制数，输出的仍是十进制；输出指数e5或e-5及以上不显示结果</p>
+<p>4.可以设置变量值为null来清空变量数据，不要把null用引号引起来</p>
+<p>5.print（’<pre>'）可以格式化输出内容</pre></p>
+<p>6.echo '引用一段html，中间想插入一个php变量怎么办'  ：‘.变量.’即可输出变量的值<br>或者使用EOF</p>
+<p>7.<<<EOF< p>
+<p>EOF；（标记末尾有分号）<br>位于开始标记与结束标记间的变量与html语句可被解析，但函数不行<br>对单双引号也能自动转义，可以直接打入单双引号<br>语句与变量间不需要.或'来分割<br>双引号内的''等字符会被保留，但/t等转义字符仍会转义</p>
+<p>8.php连接字符串与变量的方法：（1）直接连接：echo“字符串”.变量<br>                                                                   echo ‘字符串’.变量<br>                                                                   echo “字符串，变量”<br>                                           （2）echo输出多个变量：echo “字符串”，变量<br>                                           （3）EOF：<<<EOF 内容 eof<br>                                                  （补充）<<<'EOF' 字符串+变量 eof 变量不会转换，转义符号也不会<br>                                           （4）模版字符串：echo“字符串，（变量）”<br>                                                                            或 变量=["数组元素"=>“值”]<br>                                                                            echo “字符串，{变量[‘数组元素’]}”<br>                                             (5)printf和sprint: 变量1=“值1”；变量2=“值2”<br>                                                                            printf（“字符串%s，字符串%s”，变量1，变量2）<br>                                                                            结果为：字符串值1，字符串值2<br>                                                                         （注）%s为占位符<br>                                                                            变量3=sprintf（“字符串%s，字符串%s”，变量1，变量2）<br>                                                                            echo “”<br>                                                                            区别：printf直接输出，不返回任何值<br>                                                                                sprintf不输出，有返回值（var_dump(变量3)有结果）</'EOF'></EOF></p>
+<p>9.int.div(x,y)：整除，参数必须是整数，除不尽则向下取整</p>
+<p>10.赋值运算符：a.=b    即a=a.b  连接两个字符串</p>
+<p>11.比较运算符：x===y,绝对等于：x=y且类型相同，返回true<br>                            x<>y，不等于：x不等于y，返回true<br>                            x!==y，不绝对等于：x不等于y，或者类型不相同，则返回true</p>
+<p>12.会进行隐形的字符类型转换：$x=100;$y='100'<br>                                                       var_dump($x-$y) 输出0</p>
+<p>13.逻辑运算符：x and y和x&&y的意思一样<br>                            x or y和x||y的意思一样<br>                            x xor y 有且仅有一个为true，返回true<br>                            ！x  如果x不为true，则返回true</p>
+<p>注：&&优先级高于and  ||优先级高于or<br>       例子：￥abc=true and false;<br>                var_dump(￥abc)   返回true（因为and优先级比=低）<br>注：逻辑运算符的阻断效果与c一样</p>
+<p>14.条件语句：if   if......else  if......elseif......else均和c一样<br>注：if if if和if elseif elseif不一样，前者都要判断，后者需依次判断成不成立再进行下一步<br>       复习一下switch：switch（表达式（的结果））<br>                                {    case 常量表达式1：语句1；<br>                                                                  break；<br>                                     case 常量表达式2：语句2；<br>                                                                  break；<br>                                     ......<br>                                     default：语句n；<br>                                 }<br>注：字符类型不同也能匹配<br>      可以没有default</p>
+<p>15.循环语句：for循环：初始值和增量参数可以为空，或者有多个表达式（用逗号分隔）<br>                        PHP_EOL;起到\n换行符的作用<br>注：while循环注意避免死循环<br>        continue：跳出本次循环（从此处断开不执行后面语句），进行下一次循环<br>        break：断开整个循环</p>
+<p>16.数组：￥数组名=array（“数组元素1”，“数组元素2”，“数组元素n”）；<br>                  $数组名=[“数组元素1”，“数组元素2”，“数组元素n“]；<br>                  print_r(变量）；输出数组形式<br>                  var_dump(变量[n])=NULL<br>注：数组不连续：变量=[]；变量[2]=值；输出后只会给出key2的值，不会给出其他</p>
+<p>17.关联数组：key值为字符串的数组<br>                        ￥数组名[“字符串”]=“值”<br>                         $数组名=["字符串"=>"值"]<br>注：关联数组中key值不能重复，如果重复则下面的替代上面的<br>       一个数组key值出现字符串，但其他的key值未标明，则其他的key值从0依次往下<br>获取数组的长度——count()函数：echo count（变量）<br>                                                 变量=[]；变量[2]=值；count（变量）=1，因此数组长度与其key关系不大</p>
+<p>遍历数组：for(变量=0；变量<count(￥数组名)；变量++）<br>                {     echo ￥数组名[变量]<br>                      echo “<br>”<br>                }<br>                只适用于key全为数字的数组</count(￥数组名)；变量++）<br></p>
+<p>​                foreach（￥数组名 as $value）<br>​                {    echo ￥value;<br>​                      echo '<br>';<br>​                 }</p>
+<p>​                 foreach(￥数组名 as ￥key=>$value)<br>​                 {    echo ￥key.'--'.$value;<br>​                      echo '<br>';<br>​                 }</p>
+<p>注：￥value无需代入特定值，原样输入进去<br>       ￥key也是</p>
+</EOF<></p><div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2025/01/20/%E5%AF%92%E5%81%87%E5%AD%A6%E4%B9%A01%EF%BC%9A%E5%90%84%E7%B1%BB%E6%B3%A8%E5%85%A5%E4%B8%8E%E5%85%B6%E4%BB%96/">← Next </a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/11/23/ctfshow-web-rumen/">ctfshow web 入门1-20详解 Prev →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">sympathy</a></h1><div id="description"><p>sympathy的个人博客</p></div></div><div id="aside-block"></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
